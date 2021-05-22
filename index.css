@@ -1,0 +1,220 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+.container{
+    margin: auto;
+}
+.logo{
+    width: 50%;
+}
+
+.logo-img{
+    width: 20%;
+    height: auto;
+    margin: 1em;
+}
+.left h2{
+    display: none;
+}
+.container-content{
+    margin: 1em;
+    margin-top: 0.8em;
+}
+.big-image{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.coming-soon{
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    margin:auto;   
+    text-align: center;
+}
+.coming-soon h3{
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    line-height: 36px;
+    transform: translateX(-100%);
+    animation: comeinleft 0.5s ease forwards;
+}
+@keyframes comeinleft{
+    to {
+        transform: translateX(0);
+    }
+}
+
+.info{
+    margin: auto;
+    margin-top: 1.3em;
+    text-align: center;
+    line-height: 25px;
+}
+.coming-soon p{
+    transform: translateX(100%);
+    opacity: 0;
+    animation: comeinright 0.5s ease forwards;
+}
+@keyframes comeinright{
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+form{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 1em;
+
+}
+input{
+    border: 1.3px solid white;
+    margin: 0 auto;
+    padding: 0.7em;
+    border-radius: 12px;
+    width: 88%;
+}
+button{
+    background-color: #Ebb51d;
+    width: 20%;
+    border-radius: 12px;
+    border: none;
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.alert{
+    width: 40%;
+    background-color: #79c879;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 20px;
+    padding: 0.4em;
+    color: #fff;
+    display: none;
+}
+h6{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 6em;
+}
+.right{
+    display: none;
+}
+
+@media (min-width: 1025px){
+    body{
+        background-color: #fff;
+    }
+    
+    section{
+        display: flex;
+    }
+    .logo{
+        width: 50%;
+    }
+    .left{
+        width: 50%;
+        min-height: 100vh;
+        max-height: 120%;
+        background-color: black;
+    }
+    .logo{
+        margin-top: 1em;
+        margin-left: 7.5em;
+    }
+    .container-content{
+        margin-left: -4.9em;
+        margin-top: 4em;
+    }
+    .big-image{
+        width: 40%;
+        display: block;
+        margin-left: 13em;
+        margin-right: auto;
+    
+    }
+    .coming-soon{
+        width: 50%;
+        height: auto;
+        margin:auto; 
+        margin-left: 8.7em;  
+        text-align:left;
+    }
+    .info{
+        text-align: left;
+    }
+    .coming-soon h3{
+        display: none;
+
+    }
+    form{
+        margin-left: 8.7em;
+        width: 43%;
+
+    }
+    .alert{
+        margin-left: 10em;
+    }
+    h6{
+        display: none;
+    }
+    .right{
+        width: 50%;
+        height: 100vh;
+        background-color: #ffffff;
+        display: block;
+    }
+    nav ul{
+        border: 2pxsolid green;
+        color: black;
+        position: absolute;
+        margin: 2em;
+        margin-left: 18em;
+        list-style: none;
+        display: flex;
+    }
+    nav li{
+        margin-left: 3em;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+    }
+    .mesh{
+        margin-top: 3.9em;
+        height: 90vh;
+        position: relative;
+    }
+    .mesh-one{
+        width: 84%;
+        position: absolute;
+        top: 11.17em;
+        left: 3em;
+       
+    }
+    .mesh-two{
+        width: 37%;
+        position: absolute;
+        margin-left: 6em;
+        margin: auto;
+        top: 0;
+        right: 10em;
+    }
+}
